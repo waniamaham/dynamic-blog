@@ -55,7 +55,7 @@ export const description = [
     //   //   href: "https://sanity.io/",
     //   // },
     // ],
-    style: "normall",
+    style: "normal",
   },
 ];
 

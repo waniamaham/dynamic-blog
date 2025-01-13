@@ -87,11 +87,11 @@ export default async function RootLayout({
                   </h3>
                   <div className="flex flex-col items-center justify-center lg:w-1/2 lg:flex-row lg:pl-4">
                     {/* Update this href */}
-                    <Link href="/">
-      <button className="mx-3 mb-6 border rounded-md bg-white py-3 px-12 font-bold text-blue-700 transition-colors duration-200 hover:bg-gray-200">
-        Back to Home
-      </button>
-    </Link>
+                    <Link href="/" legacyBehavior>
+                      <a className="mx-3 mb-6 border rounded-md bg-purple-300 py-3 px-12 font-bold text-blue-700 transition-colors duration-200 hover:bg-purple-200">
+                        Back to Home
+                      </a>
+                    </Link>
                   </div>
                 </div>
               )}

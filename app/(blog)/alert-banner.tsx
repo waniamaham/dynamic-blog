@@ -1,10 +1,7 @@
 "use client"; // This makes this file a Client Component
 
-import Link from "next/link";
-
+import Link from "next/link"; // Import Link from Next.js for navigation
 import { useState } from "react"; // Import useState for state management
-
-const emptySubscribe = () => () => {};
 
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false); // State to manage mobile menu visibility
@@ -19,17 +16,23 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo or Blog Title */}
           <div className="text-lg font-bold text-white">
-            <Link href="/">Life In Bloom</Link> 
+            <Link href="/" legacyBehavior>
+              Life In Bloom
+            </Link>
           </div>
 
           {/* Navbar Links */}
           <div className="hidden md:flex space-x-6">
-            < Link href="/" className="text-lg hover:text-teal-200 transition-colors">
-              Home
+            <Link href="/" legacyBehavior>
+              <a className="text-lg hover:text-teal-200 transition-colors">
+                Home
+              </a>
             </Link>
             {/* Link to About page */}
-            <Link href="/about" className="text-lg hover:text-teal-200 transition-colors">
-              About
+            <Link href="/about" legacyBehavior>
+              <a className="text-lg hover:text-teal-200 transition-colors">
+                About
+              </a>
             </Link>
           </div>
 
@@ -61,12 +64,16 @@ export default function Navbar() {
       {/* Mobile Menu (Visible only when isMobileMenuOpen is true) */}
       {isMobileMenuOpen && (
         <div className="md:hidden mt-2 space-y-4 px-5 pb-3">
-          <Link href="/" className="block text-lg text-teal-200 hover:text-teal-100">
+          <Link href="/" legacyBehavior>
+            <a className="block text-lg text-teal-200 hover:text-teal-100">
             Home
+            </a>
           </Link>
           {/* Mobile link to About page */}
-          <Link href="/about" className="block text-lg text-teal-200 hover:text-teal-100">
-            About
+          <Link href="/about" legacyBehavior>
+            <a className="block text-lg text-teal-200 hover:text-teal-100">
+              About
+            </a>
           </Link>
         </div>
       )}

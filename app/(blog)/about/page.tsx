@@ -12,12 +12,13 @@ export default function About() {
         </div>
 
         <p className="mt-6 text-slate-200 leading-relaxed text-lg">
-          I’m Wania Maham and have a love for crafting efficient and visually
-          compelling digital experiences. I specialize in building responsive,
-          user-centered websites and applications that look great on any device.
-          I'm currently exploring advanced tools like Next.js and Tailwind CSS to
-          take my projects to the next level.
-        </p>
+  I&apos;m Wania Maham and have a love for crafting efficient and visually
+  compelling digital experiences. I specialize in building responsive,
+  user-centered websites and applications that look great on any device.
+  I&apos;m currently exploring advanced tools like Next.js and Tailwind CSS to
+  take my projects to the next level.
+</p>
+
 
         <div className="mt-6 flex space-x-4">
           <a
